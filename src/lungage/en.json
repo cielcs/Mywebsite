@@ -1,0 +1,32 @@
+{
+  "title": "Shota Miyagawa",
+  "education": {
+    "title": "Education",
+    "text1": "2017 - 2022 : National Institute of Technology, Suzuka College(Electronic and Information Engineering)",
+    "text2": "2022 - 2024 : National Institute of Technology, Suzuka College(Advanced Engineering Course)",
+    "text3": "2024 - : ",
+    "link": "https://www.naist.jp",
+    "description": "Nara Institute of Science and Technology (Information Science)",
+    "lab": "Laboratory : ",
+    "labLink": "http://isw3.naist.jp/Research/ai-mi-ja.html",
+    "labText": "Mathematical Informatics Lab.",
+    "labText1": "Aoyama Lab."
+  },
+  "research_interests": {
+    "title": "Research Interests",
+    "interests": "Deep Learning, Anomaly detection, Generative model, Image Processing, Beyesian Optimization"
+  },
+  "certifications": {
+    "title": "Certifications",
+    "items": [
+      "Information Security Management Examination(SG)",
+      "TOEIC Listening & Reading Test 795"
+    ]
+  },
+  "works": {
+    "title": "Works",
+    "videoId": "VsHFjEQZr2E",
+    "headerText": "PHANTOM TALE",
+    "description": "This game is called PHANTOMTALE and was developed with a close friend during my fourth year at Suzuka college of Technology."
+  }
+}

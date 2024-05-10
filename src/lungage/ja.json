@@ -1,0 +1,33 @@
+{
+  "title": "Shota Miyagawa",
+
+  "education": {
+    "title": "Education",
+    "text1": "2017年 - 2022年 : 国立鈴鹿工業高等専門学校（電子情報工学科）",
+    "text2": "2022年 - 2024年 : 国立鈴鹿工業高等専門学校（専攻科）",
+    "text3": "2024年 - : ",
+    "link": "https://www.naist.jp",
+    "description": "奈良先端科学技術大学院大学（情報科学領域）",
+    "lab": "研究室 : ",
+    "labLink": "http://isw3.naist.jp/Research/ai-mi-ja.html",
+    "labText": "数理情報学研究室",
+    "labText1": "青山研究室"
+  },
+  "research_interests": {
+    "title": "Research Interests",
+    "interests": "深層学習、異常検知、生成モデル、画像処理、ベイズ最適化"
+  },
+  "certifications": {
+    "title": "Certifications",
+    "items": [
+      "情報セキュリティマネジメント試験(SG)",
+      "TOEIC Listening & Reading Test 795"
+    ]
+  },
+  "works": {
+    "title": "Works",
+    "videoId": "VsHFjEQZr2E",
+    "headerText": "PHANTOM TALE",
+    "description": "このゲームは『PHANTOM TALE』と呼ばれ、私は高専4年生の時に友達と共に開発しました。"
+  }
+}
