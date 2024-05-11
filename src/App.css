@@ -66,21 +66,15 @@ a {
   color: white;
 }
 
-/* @keyframes bgColor {
-  0% {
-    background: #000000;
-  }
-  50% {
-    background: #0774af;
-  }
-  100% {
-    background: #000000;
-  }
-} */
-
 .particles-canvas {
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1; /* キャンバスを他の要素よりも背面に配置 */
+}
+
+#wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }

@@ -29,6 +29,7 @@ function App() {
   return (
     <div className="App">
       <div id="wrapper">
+      <meta name="viewport" content="width=device-width, initial-scale=0.8"></meta>
         <h1 style={{ marginTop: '80px',fontFamily: "Kdam Thmor Pro"}}>{t('title')}</h1>
         <button onClick={() => changeLanguage('en')}>English</button>
         <button onClick={() => changeLanguage('ja')}>Japanese</button>
@@ -62,7 +63,7 @@ function App() {
       </div>
       <div className='Works'>
         <h2 style={{ marginTop: '80px',fontFamily: "Kdam Thmor Pro"}}>{t('works.title')}</h2>
-        <ul style={{ padding: 0, textAlign: 'center', margin: '0 auto', maxWidth: '1000px', lineHeight: '2.5' }}>
+        <ul style={{ padding: 0, textAlign: 'center', margin: '0 auto', maxWidth: '600px', lineHeight: '2.5' }}>
           <div>
             <VideoPlayer videoId={t('works.videoId')} headerText={t('works.headerText')} Description={t('works.description')}/>
           </div>
