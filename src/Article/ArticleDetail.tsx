@@ -1,13 +1,13 @@
 // ArticleDetail.tsx
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams,Link } from 'react-router-dom';
 
 interface Article {
   id: number;
   title: string;
   contentLayout: JSX.Element;
 }
-// {process.env.PUBLIC_URL + "/images/root.jpeg"}
+
 const articles: Article[] = [
   { 
     id: 1, 
@@ -74,6 +74,13 @@ const ArticleDetail: React.FC = () => {
       <div style={{ padding: '20px' }}>
         <h2>{article.title}</h2>
         {article.contentLayout}
+        {article.id !== 1 && (
+            <Link to={`/article/${article.id - 1}`}style={{ marginRight: '10px' }}>前のページへ</Link>
+          )}
+          <Link to="/" style={{ marginRight: '10px' }}>メインに戻る</Link>
+        {article.id !== articles.length && (
+          <Link to={`/article/${article.id + 1}`}style={{ marginRight: '10px' }}>次のページへ</Link>
+        )}
       </div>
     );
 };
