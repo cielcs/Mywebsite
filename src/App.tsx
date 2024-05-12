@@ -4,6 +4,9 @@ import './App.css';
 import './lungage/configs'
 import ParticleBackground from './components/Particlebackground';
 import VideoPlayer from './components/VideoPlayer';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ArticleList from './Article/ArticleList';
+import ArticleDetail from './Article/ArticleDetail';
 
 function App() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -61,10 +64,21 @@ function App() {
       </div>
       <div className='Works'>
         <h2 style={{ marginTop: '80px',fontFamily: "Kdam Thmor Pro"}}>{t('works.title')}</h2>
-        <ul style={{ padding: 0, textAlign: 'center', margin: '0 auto', maxWidth: '600px', lineHeight: '2.5' }}>
+        <ul style={{ padding: 0, textAlign: 'center', margin: '0 auto', maxWidth: '800px', lineHeight: '2.5' }}>
           <div>
             <VideoPlayer videoId={t('works.videoId')} headerText={t('works.headerText')} Description={t('works.description')}/>
           </div>
+        </ul>
+      </div>
+      <div className='Diary'>
+      <h2 style={{ marginTop: '0px',fontFamily: "Kdam Thmor Pro"}}>Diary</h2>
+        <ul style={{ padding: 0, textAlign: 'center', margin: '0 auto', maxWidth: '800px', lineHeight: '2.5' }}>
+        <Router>
+          <Routes>
+            <Route path="/" element={<ArticleList />} />
+            <Route path="/article/:id" element={<ArticleDetail />} />
+          </Routes>
+        </Router>
         </ul>
       </div>
       </div>
