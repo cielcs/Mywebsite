@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useTransition } from 'react';
+import React, { useState, useEffect,} from 'react';
 import {useTranslation} from 'react-i18next'
 import './App.css';
 import './lungage/configs'
@@ -71,7 +71,7 @@ function App() {
         </ul>
       </div>
       <div className='Diary'>
-      <h2 style={{ marginTop: '0px',fontFamily: "Kdam Thmor Pro"}}>Diary</h2>
+      <h2 style={{ marginTop: '0px',fontFamily: "Kdam Thmor Pro"}}>Diary</h2><br></br>
         <ul style={{ padding: 0, textAlign: 'center', margin: '0 auto', maxWidth: '800px', lineHeight: '2.5' }}>
         <Router>
           <Routes>

@@ -1,13 +1,14 @@
 // ArticleDetail.tsx
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import roots from '../image.png'
 
 interface Article {
   id: number;
   title: string;
   contentLayout: JSX.Element;
 }
-
+// {process.env.PUBLIC_URL + "/images/root.jpeg"}
 const articles: Article[] = [
   { 
     id: 1, 
@@ -16,10 +17,11 @@ const articles: Article[] = [
       <div>
         <h3 style={{ textAlign: 'left' }}>スケジュールとか</h3>
         <p style={{ textAlign: 'left' }}>2023/03/04 - 2023/03/24の20日間ヨーロッパ周遊してきました。<br></br>
-        ルートはこんな感じです。名古屋→韓国→ポーランド(乗り換え）→フランス→ドイツ→スイス→イタリア</p>
-        <img src={process.env.PUBLIC_URL + "/images/root.jpeg"} width={450}></img>
+        ルートはこんな感じです。名古屋→韓国→ポーランド（乗り換え）→フランス→ドイツ→スイス→イタリア</p>
+        <img src={roots} style={{ width: '450px' }} alt="root"></img>
         <p style={{ textAlign: 'left' }}>青色:✈️ 赤色:🚌 黒色: 🚃<br></br>
-        基本都市間の移動には格安高速バスのFlix Busを利用しました。本当に安くて、お金があまりない学生には最高のバスでした。しかし、ヴェネツィア-ローマ間は、精神的にも肉体的にも限界だったためバス代を諦めて、高速鉄道を利用しました。Flix Busの感想は後ほど書こうと思います。
+        基本都市間の移動には格安高速バスのFlix Busを利用しました。本当に安くて、お金があまりない学生には最高のバスでした。
+        しかし、ヴェネツィア-ローマ間は、精神的にも肉体的にも限界だったためバス代を諦めて、高速鉄道を利用しました。Flix Busの感想は後ほど書こうと思います。
         </p>
       </div>
     ) 
@@ -31,7 +33,11 @@ const articles: Article[] = [
       <div>
         <h3>記事2のタイトル</h3>
         <p>記事2の内容がここに入ります。</p>
+        <img src={roots} style={{ width: '450px' }} alt="root"></img>
         <p>記事2の詳細情報がここに入ります。</p>
+        <img src={process.env.PUBLIC_URL + "/images/image.png"} style={{ width: '450px' }} alt="root"></img>
+        <img src={process.env.PUBLIC_URL + "/images/image.png"} style={{ width: '300px' }} alt="root"></img>
+        <img src={process.env.PUBLIC_URL + "/images/paris1.jpeg"} style={{ width: '450px' }} alt="root"></img>
       </div>
     ) 
   },

@@ -9,7 +9,7 @@ interface Article {
 }
 
 const articles: Article[] = [
-  { id: 1, title: 'ヨーロッパ周遊＃1', imageUrl: '/images/korea1.jpg' },
+  { id: 1, title: 'ヨーロッパ周遊＃1', imageUrl: '/images/paris1.jpeg' },
   { id: 2, title: 'ヨーロッパ周遊＃2', imageUrl: '/images/korea1.jpg' },
   { id: 3, title: 'ヨーロッパ周遊＃1', imageUrl: '/images/korea1.jpg' },
   { id: 4, title: 'ヨーロッパ周遊＃1', imageUrl: '/images/korea1.jpg' },
@@ -22,7 +22,7 @@ const ArticleList: React.FC = () => {
         <div key={article.id} style={{ display: 'inline-block', margin: '10px', width: '380px' }}>
           <Link to={`/article/${article.id}`}>
             <img src={process.env.PUBLIC_URL +  article.imageUrl} alt={article.title} style={{ width: '100%' }} />
-            <h3>{article.title}</h3>
+            <h4>{article.title}</h4>
           </Link>
         </div>
       ))}
