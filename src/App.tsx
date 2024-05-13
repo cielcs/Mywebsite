@@ -45,7 +45,7 @@ function App() {
             <Route path="/article/:id" element={<ArticleDetail />} />
           </Routes>
         </Router>
-
+        
       </div>
       <div className="cursor" style={{ left: cursorPosition.x, top: cursorPosition.y }} />
       <ParticleBackground></ParticleBackground> 

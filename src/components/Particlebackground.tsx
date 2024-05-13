@@ -44,7 +44,7 @@ function ParticleBackground() {
               }
             },
             size: {
-              value: 4.00851810096455,
+              value: 5.00851810096455,
               random: true,
               anim: {
                 enable: false,

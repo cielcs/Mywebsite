@@ -13,8 +13,8 @@ interface Article {
 const articles: Article[] = [
   { id: 1, title: 'Europe周遊＃1', imageUrl: '/images/paris1.jpeg' },
   { id: 2, title: 'Europe周遊＃2', imageUrl: '/images/korea1.jpg' },
-  { id: 3, title: 'Europe周遊＃1', imageUrl: '/images/korea1.jpg' },
-  { id: 4, title: 'Europe周遊＃1', imageUrl: '/images/korea1.jpg' },
+  { id: 3, title: 'Europe周遊＃1', imageUrl: '/images/effe.jpg' },
+  { id: 4, title: 'Europe周遊＃1', imageUrl: '/images/oru.jpg' },
 ];
 
 
@@ -73,6 +73,8 @@ const ArticleList: React.FC = () => {
       </div>
       </ul>
     </div>
+    <h4 style={{ marginTop: '10px',fontFamily: "Kdam Thmor Pro", textAlign: 'left' }}>Todo</h4>
+    <p style={{ marginTop: '10px',fontFamily: "Kdam Thmor Pro", textAlign: 'left' }}>works,diaryを書き足す</p>
     </div>
   );
 };
