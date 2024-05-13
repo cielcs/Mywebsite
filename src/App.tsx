@@ -5,7 +5,7 @@ import './App.css';
 import './lungage/configs'
 import ParticleBackground from './components/Particlebackground';
 import VideoPlayer from './components/VideoPlayer';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import ArticleList from './Article/ArticleList';
 import ArticleDetail from './Article/ArticleDetail';
 
@@ -45,7 +45,7 @@ function App() {
             <Route path="/article/:id" element={<ArticleDetail />} />
           </Routes>
         </Router>
-        
+
       </div>
       <div className="cursor" style={{ left: cursorPosition.x, top: cursorPosition.y }} />
       <ParticleBackground></ParticleBackground> 
