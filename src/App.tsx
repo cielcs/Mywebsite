@@ -1,3 +1,4 @@
+// App.tsx
 import React, { useState, useEffect,} from 'react';
 import {useTranslation} from 'react-i18next'
 import './App.css';
@@ -37,50 +38,14 @@ function App() {
         <ul style={{ listStyleType: 'none', padding: 0, textAlign: 'center', margin: '0 auto', maxWidth: '800px',lineHeight: '1.5' }}>
           1st year master course student(NAIST)<br/>🐈‍⬛<a href="https://github.com/cielcs">Github</a><br/>
           miyagawa.shota.mw3@naist.ac.jp</ul>
-      <div className="Education">
-        <h2 style={{ marginTop: '80px',fontFamily: "Kdam Thmor Pro"}}>{t('education.title')}</h2>
-        <ul style={{ listStyleType: 'none', padding: 0, textAlign: 'left', margin: '0 auto',maxWidth: '800px', lineHeight: '2.5' }}>
-          <li>{t('education.text1')}</li>
-            <ul><li>{t('education.lab')}{t('education.labText1')}</li></ul>
-          <li>{t('education.text2')}</li>
-            <ul><li>{t('education.lab')}{t('education.labText1')}</li></ul>
-          <li>{t('education.text3')}<a href={t('education.link')}>{t('education.description')}</a></li>
-            <ul><li>{t('education.lab')}<a href={t('education.lablink')}>{t('education.labText')}</a></li></ul>
-        </ul>
-      </div>
-      <div className='Research Interests'>
-        <h2 style={{ marginTop: '80px',fontFamily: "Kdam Thmor Pro"}}>{t('research_interests.title')}</h2>
-        <ul style={{ listStyleType: 'none', padding: 0, textAlign: 'left', margin: '0 auto', maxWidth: '800px',lineHeight: '2.5' }}>
-          <li>{t('research_interests.interests')} <br/></li>
-        </ul>
-      </div>
-      <div className='Certification'>
-        <h2 style={{ marginTop: '80px',fontFamily: "Kdam Thmor Pro"}}>{t('certifications.title')}</h2>
-        <ul style={{ padding: 0, textAlign: 'left', margin: '0 auto',maxWidth: '800px', lineHeight: '2.5' }}>
-          {(t('certifications.items', { returnObjects: true })as any[]).map((item: string, index: number) => (
-                <li key={index}>{item}</li>
-            ))}
-        </ul>
-      </div>
-      <div className='Works'>
-        <h2 style={{ marginTop: '80px',fontFamily: "Kdam Thmor Pro"}}>{t('works.title')}</h2>
-        <ul style={{ padding: 0, textAlign: 'center', margin: '0 auto', maxWidth: '800px', lineHeight: '2.5' }}>
-          <div>
-            <VideoPlayer videoId={t('works.videoId')} headerText={t('works.headerText')} Description={t('works.description')}/>
-          </div>
-        </ul>
-      </div>
-      <div className='Diary'>
-      <h2 style={{ marginTop: '0px',fontFamily: "Kdam Thmor Pro"}}>Diary</h2><br></br>
-        <ul style={{ padding: 0, textAlign: 'center', margin: '0 auto', maxWidth: '1000px', lineHeight: '2.5' }}>
+
         <Router>
           <Routes>
             <Route path="/" element={<ArticleList />} />
             <Route path="/article/:id" element={<ArticleDetail />} />
           </Routes>
         </Router>
-        </ul>
-      </div>
+
       </div>
       <div className="cursor" style={{ left: cursorPosition.x, top: cursorPosition.y }} />
       <ParticleBackground></ParticleBackground> 

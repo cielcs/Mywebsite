@@ -13,7 +13,7 @@ const articles: Article[] = [
     id: 1, 
     title: 'ヨーロッパ周遊＃1', 
     contentLayout: (
-      <div>
+      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
         <h3 style={{ textAlign: 'left' }}>スケジュールとか</h3>
         <p style={{ textAlign: 'left' }}>2023/03/04 - 2023/03/24の20日間ヨーロッパ周遊してきました。<br></br>
         ルートはこんな感じです。名古屋→韓国→ポーランド（乗り換え）→フランス→ドイツ→スイス→イタリア</p>
@@ -29,6 +29,7 @@ const articles: Article[] = [
     id: 2, 
     title: '記事2', 
     contentLayout: (
+      <ul style={{ padding: 0, textAlign: 'center', margin: '0 auto', maxWidth: '800px', lineHeight: '2.5' }}>
       <div>
         <h3>記事2のタイトル</h3>
         <p>記事2の内容がここに入ります。</p>
@@ -36,7 +37,9 @@ const articles: Article[] = [
         <img src={process.env.PUBLIC_URL + "/images/image.png"} style={{ width: '450px' }} alt="root"></img>
         <img src={process.env.PUBLIC_URL + "/images/image.png"} style={{ width: '300px' }} alt="root"></img>
         <img src={process.env.PUBLIC_URL + "/images/paris1.jpeg"} style={{ width: '450px' }} alt="root"></img>
+        
       </div>
+      </ul>
     ) 
   },
   { 
@@ -77,7 +80,7 @@ const ArticleDetail: React.FC = () => {
         {article.id !== 1 && (
             <Link to={`/article/${article.id - 1}`}style={{ marginRight: '10px' }}>前のページへ</Link>
           )}
-          <Link to="/" style={{ marginRight: '10px' }}>メインに戻る</Link>
+          <Link to="/" style={{ marginRight: '10px' }}  >メインに戻る</Link>
         {article.id !== articles.length && (
           <Link to={`/article/${article.id + 1}`}style={{ marginRight: '10px' }}>次のページへ</Link>
         )}
