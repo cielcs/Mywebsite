@@ -47,8 +47,8 @@ To learn React, check out the [React documentation](https://reactjs.org/)
 
 ### docker image をビルド
 
-docker build -t web:1.0 . 
-docker container起動そして終了時消去
-docker run -it --rm -v D:\Programing\mywebsite\Mywebsite:/home -p 3000:3000 web:1.0
-vscode docker入る
-Remote-Containers: Attach to Running Container...
+`docker build -t web:1.0 .` \
+docker container起動そして終了時消去\
+`docker run -it --rm -v D:\Programing\mywebsite\Mywebsite:/home -p 3000:3000 web:1.0`\
+vscode docker入る\
+`Remote-Containers: Attach to Running Container...`
