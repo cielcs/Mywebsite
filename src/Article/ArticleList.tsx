@@ -31,7 +31,7 @@ const ArticleList: React.FC = () => {
           <li>{t('education.text2')}</li>
             <ul><li>{t('education.lab')}{t('education.labText1')}</li></ul>
           <li>{t('education.text3')}<a href={t('education.link')}>{t('education.description')}</a></li>
-            <ul><li>{t('education.lab')}<a href={t('education.lablink')}>{t('education.labText')}</a></li></ul>
+            <ul><li>{t('education.lab')}<a href={t('education.labLink')}>{t('education.labText')}</a></li></ul>
         </ul>
       </div>
       <div className='Research Interests'>

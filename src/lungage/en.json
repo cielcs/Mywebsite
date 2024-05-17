@@ -9,7 +9,7 @@
     "link": "https://www.naist.jp",
     "description": "Nara Institute of Science and Technology (Information Science)",
     "lab": "Laboratory : ",
-    "labLink": "http://isw3.naist.jp/Research/ai-mi-ja.html",
+    "labLink": "https://isw3.naist.jp/Research/ai-mi-ja.html",
     "labText": "Mathematical Informatics Lab.",
     "labText1": "Aoyama Lab."
   },
@@ -31,4 +31,3 @@
     "description": "This game is called PHANTOMTALE and was developed with a close friend during my fourth year at Suzuka college of Technology."
   }
 }
-
