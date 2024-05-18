@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Teko:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Teko:wght@300..700&display=swap");
 
 .App {
   text-align: center;
-  color:white;
+  color: white;
   position: relative;
   width: 100%;
   height: 100%;
@@ -46,8 +46,8 @@
 
 body {
   /* font-family: "Teko", sans-serif; */
-  background:black;
-  cursor:none;
+  background: black;
+  cursor: none;
   font-size: 16px;
   animation: bgColor 10s infinite;
 }

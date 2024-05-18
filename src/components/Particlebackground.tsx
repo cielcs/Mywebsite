@@ -1,9 +1,9 @@
-import Particles from 'react-tsparticles';
+import Particles from "react-tsparticles";
 
 function ParticleBackground() {
-    return (
-        <div style={{ position: 'relative',pointerEvents: 'none' }}>
-        <Particles
+  return (
+    <div style={{ position: "relative", pointerEvents: "none" }}>
+      <Particles
         className="particles-canvas"
         id="tsparticles"
         options={{
@@ -12,26 +12,26 @@ function ParticleBackground() {
               value: 100,
               density: {
                 enable: true,
-                value_area: 4655.9802712700375
-              }
+                value_area: 4655.9802712700375,
+              },
             },
             color: {
-              value: "#ffffff"
+              value: "#ffffff",
             },
             shape: {
               type: "triangle",
               stroke: {
                 width: 0,
-                color: "#000000"
+                color: "#000000",
               },
               polygon: {
-                nb_sides: 5
+                nb_sides: 5,
               },
               image: {
                 src: "img/github.svg",
                 width: 100,
-                height: 100
-              }
+                height: 100,
+              },
             },
             opacity: {
               value: 0.1,
@@ -40,8 +40,8 @@ function ParticleBackground() {
                 enable: false,
                 speed: 1,
                 opacity_min: 0.1,
-                sync: false
-              }
+                sync: false,
+              },
             },
             size: {
               value: 5.00851810096455,
@@ -50,15 +50,15 @@ function ParticleBackground() {
                 enable: false,
                 speed: 40,
                 size_min: 0.1,
-                sync: false
-              }
+                sync: false,
+              },
             },
             line_linked: {
               enable: true,
               distance: 256.5451584617312,
               color: "#ffffff",
               opacity: 0.1523236878366529,
-              width: 2.084429412501566
+              width: 2.084429412501566,
             },
             move: {
               enable: true,
@@ -71,22 +71,22 @@ function ParticleBackground() {
               attract: {
                 enable: false,
                 rotateX: 481.02217211574595,
-                rotateY: 1200
-              }
-            }
+                rotateY: 1200,
+              },
+            },
           },
           interactivity: {
             detect_on: "canvas",
             events: {
               onhover: {
                 enable: false,
-                mode: "grab"
+                mode: "grab",
               },
-            //   onclick: {
-            //     enable: true,
-            //     mode: "push"
-            //   },
-              resize: true
+              //   onclick: {
+              //     enable: true,
+              //     mode: "push"
+              //   },
+              resize: true,
             },
             // modes: {
             //   grab: {
@@ -113,11 +113,11 @@ function ParticleBackground() {
             //   }
             // }
           },
-          retina_detect: true
+          retina_detect: true,
         }}
       />
-      </div>
-    );
-  }
-  
-  export default ParticleBackground;
+    </div>
+  );
+}
+
+export default ParticleBackground;
