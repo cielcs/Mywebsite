@@ -1,6 +1,9 @@
 // ArticleDetail.tsx
 import React from 'react';
 import { useParams,Link } from 'react-router-dom';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 
 interface Article {
   id: number;

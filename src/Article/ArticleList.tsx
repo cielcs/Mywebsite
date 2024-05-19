@@ -3,6 +3,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import VideoPlayer from '../components/VideoPlayer';
+import Card from '@mui/material/Card';
+import CardActionArea from '@mui/material/CardActionArea';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import { styled } from '@mui/system';
 
 interface Article { 
   id: number;
@@ -10,11 +17,22 @@ interface Article {
   imageUrl: string;
 }
 
+const StyledCard = styled(Card)({
+  width: '220px',
+  transition: 'transform 0.3s ease-in-out',
+  boxShadow: '0 4px 8px rgba(255, 255, 255, 0.5)', // 白い影を追加
+  backgroundColor: '#000000', // カード自体の背景色を少し明るめに設定
+  '&:hover': {
+    transform: 'scale(1.05)',
+    boxShadow: '0 8px 16px rgba(255, 255, 255, 0.5)', // ホバー時に影を強くする
+  },
+});
+
 const articles: Article[] = [
-  { id: 1, title: 'Europe周遊＃1', imageUrl: '/images/paris1.jpeg' },
-  { id: 2, title: 'Europe周遊＃2', imageUrl: '/images/korea1.jpg' },
-  { id: 3, title: 'Europe周遊＃1', imageUrl: '/images/effe.jpg' },
-  { id: 4, title: 'Europe周遊＃1', imageUrl: '/images/oru.jpg' },
+  { id: 1, title: 'Europe＃1', imageUrl: '/images/paris1.jpeg' },
+  { id: 2, title: 'Europe＃2', imageUrl: '/images/korea1.jpg' },
+  { id: 3, title: 'Europe＃1', imageUrl: '/images/effe.jpg' },
+  { id: 4, title: 'Europe＃1', imageUrl: '/images/oru.jpg' },
 ];
 
 
@@ -55,8 +73,9 @@ const ArticleList: React.FC = () => {
             <VideoPlayer videoId={t('works.videoId')} headerText={t('works.headerText')} Description={t('works.description')}/>
           </div>
         </ul>
+        
       </div>
-      <div className='Diary'>
+      {/* <div className='Diary'>
         <h2 style={{ marginTop: '10px',fontFamily: "Kdam Thmor Pro"}}>Diary</h2><br></br>
         <ul style={{ padding: 0, textAlign: 'center', margin: '0 auto', maxWidth: '1000px', lineHeight: '2.5' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
@@ -72,6 +91,30 @@ const ArticleList: React.FC = () => {
         ))}
       </div>
       </ul>
+    </div> */}
+    <div className="Diary">
+    <h2 style={{ marginTop: '10px',fontFamily: "Kdam Thmor Pro"}}>Diary</h2>
+      <Grid container spacing={4} justifyContent="center" style={{ marginTop: '10px' }}>
+        {articles.map((article) => (
+          <Grid item key={article.id}>
+            <StyledCard>
+              <CardActionArea component={Link} to={`/article/${article.id}`}>
+                <CardMedia
+                  component="img"
+                  height="200"
+                  image={process.env.PUBLIC_URL + article.imageUrl}
+                  alt={article.title}
+                />
+                <CardContent style={{ padding: '5px' }}>
+                  <Typography gutterBottom variant="h6" component="div" style={{ fontSize: '22px',fontFamily: "Kdam Thmor Pro" ,color:'white'}}>
+                    {article.title}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </StyledCard>
+          </Grid> 
+        ))}
+      </Grid>
     </div>
     <h4 style={{ marginTop: '10px',fontFamily: "Kdam Thmor Pro", textAlign: 'left' }}>Todo</h4>
     <p style={{ marginTop: '10px',fontFamily: "Kdam Thmor Pro", textAlign: 'left' }}>works,diaryを書き足す</p>
