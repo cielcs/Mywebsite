@@ -16,7 +16,7 @@ function ParticleBackground() {
               }
             },
             color: {
-              value: "#ffffff"
+              value: "#00ffff"
             },
             shape: {
               type: "triangle",
@@ -34,10 +34,10 @@ function ParticleBackground() {
               }
             },
             opacity: {
-              value: 0.1,
+              value: 0.7,
               random: false,
               anim: {
-                enable: false,
+                enable: true,
                 speed: 1,
                 opacity_min: 0.1,
                 sync: false

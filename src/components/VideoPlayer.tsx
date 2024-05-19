@@ -7,26 +7,26 @@ interface VideoPlayerProps {
   Description: string;
 }
 
-const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoId, headerText,Description }) => {
+const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoId, headerText, Description }) => {
   const opts: any = {
-    height: '350',
-    width: '500',
+    height: '100%',
+    width: '100%', // 幅を100%に設定
     playerVars: {
-      // https://developers.google.com/youtube/player_parameters
       autoplay: 0,
     },
   };
 
   const onReady = (event: any) => {
-    // access to player in all event handlers via event.target
     event.target.pauseVideo();
   };
 
   return (
-    <div style={{ position: 'relative', width: '100%', paddingBottom: '16.25%', overflow: 'hidden' }}>
-      <h3 style={{ marginTop: '10px',fontFamily: "Kdam Thmor Pro"}}>{headerText}</h3>
-      <YouTube videoId={videoId} opts={opts} onReady={onReady} />
-      {Description}
+    <div style={{ width: '100%', overflow: 'hidden' }}>
+      <h3 style={{ marginTop: '10px', fontFamily: 'Kdam Thmor Pro' }}>{headerText}</h3>
+      <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+        <YouTube videoId={videoId} opts={opts} onReady={onReady} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} />
+      </div>
+      <p>{Description}</p>
     </div>
   );
 };

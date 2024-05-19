@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     const updateCursorPosition = (e: MouseEvent) => {
-      setCursorPosition({ x: e.clientX - 15, y: e.clientY - 15 });
+      setCursorPosition({ x: e.clientX - 11, y: e.clientY - 11 });
     };
 
     document.addEventListener("mousemove", updateCursorPosition);
@@ -32,7 +32,7 @@ function App() {
       <div id="wrapper">
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=0.8"
+          content="width=device-width, initial-scale=1"
         ></meta>
         <h1 style={{ marginTop: "80px", fontFamily: "Kdam Thmor Pro" }}>
           {t("title")}
