@@ -84,11 +84,11 @@ a {
   padding: 0 20px;
 }
 
-.vertical-line {
+.verticaltop_line {
   position: fixed;
-  top: 10px;
-  bottom: 0;
-  right: 20px; /* 画面の右端に配置 */
-  width: 10px; /* 線の幅 */
-  background-color: rgba(0, 255, 255, 0.8); /* 線の色 */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px; /* 横棒の高さ */
+  background-color: rgba(0, 255, 255, 0.7); /* 線の色 */
 }
