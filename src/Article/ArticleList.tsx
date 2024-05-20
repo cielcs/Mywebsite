@@ -37,8 +37,9 @@ const HorizontalCard = styled(Card)({
   boxShadow: '0 4px 8px rgba(0, 255, 255, 0.5)', // 白い影を追加
   backgroundColor: 'rgba(20, 27, 30, 0.3)', // カード自体の背景色を少し明るめに設定
   '&:hover': {
-    transform: 'scale(1.02)',
-    boxShadow: '0 8px 16px rgba(0, 255, 255, 0.5)', // ホバー時に影を強くする
+    // transform: 'scale(1.02)',
+    // boxShadow: '0 8px 16px rgba(0, 255, 255, 0.5)', // ホバー時に影を強くする
+    backgroundColor: 'rgba(120, 127, 130, 0.3)',
   },
 });
 
@@ -57,8 +58,8 @@ const articles: Article[] = [
 ];
 const products: Products[] = [
   { id: 1, title: 'PHANTOMTALE', imageUrl: '/images/phantom2.png',description: '-高専4年性の時の友達と制作したVRゲーム-'},
-  { id: 2, title: 'Bertを用いたSNS上の文章取得', imageUrl: '/images/korea1.jpg',description: '-SNS上の投稿を判別するシステム-' },
-  { id: 3, title: 'Variational Autoencodeによる異常検知', imageUrl: '/images/effe.jpg',description: '-光沢を持つ製品の異常を確立的生成モデルを用いて検知-' },
+  { id: 2, title: 'BERTを用いたSNS上の文章取得&分類', imageUrl: '/images/twitter.png',description: '-SNS上の投稿を判別するシステム-' },
+  { id: 3, title: 'Variational Autoencodeによる異常検知', imageUrl: '/images/vae.png',description: '-光沢を持つ製品の異常を確立的生成モデルを用いて検知-' },
   // { id: 4, title: 'Europe＃1', imageUrl: '/images/oru.jpg' ,description: 'xxxxxxxxxx'},
 ];
 

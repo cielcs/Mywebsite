@@ -40,7 +40,7 @@ const products: Product[] = [
         <br></br>また、ブループリントはNode-REDみたいにビジュアルプログラミングで最初のうちは意外と扱いやすかったが、システムが複雑になればなるほど、スパゲッティ化が加速して魔境になるのでc++を使ったほうがいいと思った。しかし、コーディングに抵抗のあるメンバーもブループリントなら自ら勉強するようになったのは本当に素晴らしいと思った。</p>
         <br></br>
         <img src={'../../'+process.env.PUBLIC_URL+'/images/bluep.png'} style={{ width: '500px', maxHeight: '350px', objectFit: 'cover' }} />
-        <p style={{ textAlign: 'left' }}>To members:みんなありがとう。元気だといいね。因みに俺は課題が多すぎて元気じゃない。</p>
+        <p style={{ textAlign: 'left' }}>To members:みんなありがとう。元気だといいね。因みに俺は課題が多すぎて元気じゃない()</p>
 
 
 
@@ -55,36 +55,44 @@ const products: Product[] = [
   },
   { 
     id: 2, 
-    title: 'ヨーロッパ周遊＃2', 
+    title: 'BERTを用いたSNS上の文章取得&分類', 
     contentLayout: (
-      <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-        <br></br><br></br>
-        <h3 style={{ textAlign: 'left' }}>仁川空港&ソウル</h3>
-        <p style={{ textAlign: 'left' }}>お昼頃に仁川国際空港へ着陸し、入国検査を受けました。入国検査の待機列では若い女性で溢れかえってました。ちなみにパスポートを確認する人がカッコよかったですw</p>
-        <p style={{ textAlign: 'left' }}>夜ご飯は明洞にあるお店でサムギョプサルを食べました。店員さんが日本語をかなり上手に喋っていて驚きました。しかもフレンドリーな対応をしてくださって旅行初っ端から気分が最高でした。感謝します。味に関してはノーコメントでお願いします。ただ、お肉は値段によって味の違いが顕著に出るのでなるべく高い店を選んだ方がいいなって思いました。</p>
-        <img src={'../../'+process.env.PUBLIC_URL+'/images/samu.jpg'} style={{ width: '450px' }} alt="root"></img>
-        <p style={{ textAlign: 'left' }}>明洞は原宿みたいな感じで若者の街っていう感じがしました。因みに原宿に行ったことないです。 でもこれだけは絶対に言えます。コスメやアイドルが好きな人には最高な空間に違いないです。</p>
-        <img src={'../../'+process.env.PUBLIC_URL+'/images/korea1.jpg'} style={{ width: '450px' }} alt="root"></img>
-        <br></br><br></br><br></br>
-        <h3 style={{ textAlign: 'left' }}>フランスに到着</h3>
-        <p style={{ textAlign: 'left' }}>フランスのシャルルドゴール空港に到着しました。因みに入国した国はワルシャワです。EUでは一回入国するとEU国間での移動が検査なしで行えます。<br></br>
-        ホテルの最寄駅に行くために、券売機の操作に四苦八苦していたら黒人のお兄さんが急に現れて、内心かなり焦りました。しかし、そのお兄さんは券売機の使い方やバスで行った方が速いよなどいろいろ親切に教えてくれました。正直、フランスの切符の買い方はまじで最初意味が分からなかったので、本当にありがとうございます！<br></br><br></br>
-        次回、フランス探索
-        </p>
-        
-        <br></br><br></br><br></br>
-      </div>
+        <div>
+        <br></br>
+    <img src={'../../'+process.env.PUBLIC_URL+'/images/twitter.png'} style={{ width: '700px', maxHeight: '350px', objectFit: 'cover' }} />
+  <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+    <br></br><br></br>
+    <h3 style={{ textAlign: 'left',textDecoration: 'underline', textDecorationColor: 'rgba(0, 255, 255, 0.7)',textUnderlineOffset: '8px' }}>概要</h3>
+    <p style={{ textAlign: 'left' }}>SNSである特定の話題を調べるときにあなたはどうするだろう？そう、きっとキーワードをやハッシュタグで検索するだろう。しかし、世の中にはキーワードを付けずに内容をツイートすることが頻繁にあると思う。。そんな情報にアクセスしたくないか？人間は意外とキーワードがなくても相手が何についてツイートしてるか意外とわかるよね？そこで、#検索で得た内容にラベルを付けて、分類機を作ることで新たに取得したラベルの無い文章が何について話しているのかわかるのではないか。そんな思いで遊んでみた。</p>
+    <br></br>
+    <h3 style={{ textAlign: 'left',textDecoration: 'underline', textDecorationColor: 'rgba(0, 255, 255, 0.7)',textUnderlineOffset: '8px' }}>使用技術</h3>
+    <p style={{ textAlign: 'left' }}>Transformer<br></br>BERT<br></br>Python<br></br>TwitterAPI<br></br>csv</p>
+    <br></br>
+    <h3 style={{ textAlign: 'left',textDecoration: 'underline', textDecorationColor: 'rgba(0, 255, 255, 0.7)',textUnderlineOffset: '8px' }}>感想</h3>
+    <p style={{ textAlign: 'left' }}>結果としては特徴的なキーワードを含まない文章、つまりルールベースでは得られない文章でも何について話しているのかを分類することができた。もちろんできない文章もあるし、誤った判断もした。この時はまだでかいモデルが強くなるって分かっていなかったから、GPTとか使ってリベンジしたい。<br></br>この開発を通して、以下のことを副産物的に学んだ。Transformerのなんとなくの理解と実装、APIの使い方、自動化の実装、正規表現、csvデータの扱い方。</p>
+    <br></br>
+      </div></div>
     ) 
   },
   { 
     id: 3, 
-    title: '記事3', 
+    title: 'Variational Autoencodeによる異常検知', 
     contentLayout: (
-      <div>
-        <h3>記事3のタイトル</h3>
-        <p>記事3の内容がここに入ります。</p>
-        <p>記事3の詳細情報がここに入ります。</p>
-      </div>
+        <div>
+        <br></br>
+    <img src={'../../'+process.env.PUBLIC_URL+'/images/vae.png'} style={{ width: '700px', maxHeight: '350px', objectFit: 'cover' }} />
+  <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+    <br></br><br></br>
+    <h3 style={{ textAlign: 'left',textDecoration: 'underline', textDecorationColor: 'rgba(0, 255, 255, 0.7)',textUnderlineOffset: '8px' }}>概要</h3>
+    <p style={{ textAlign: 'left' }}>光沢感を持つ製品の傷を検知するために生成モデルのVAEを用いた。詳細は後日。</p>
+    <br></br>
+    <h3 style={{ textAlign: 'left',textDecoration: 'underline', textDecorationColor: 'rgba(0, 255, 255, 0.7)',textUnderlineOffset: '8px' }}>使用技術</h3>
+    <p style={{ textAlign: 'left' }}>Python<br></br>Tensorflow<br></br>VAE<br></br>OpenCV<br></br>c++</p>
+    <br></br>
+    <h3 style={{ textAlign: 'left',textDecoration: 'underline', textDecorationColor: 'rgba(0, 255, 255, 0.7)',textUnderlineOffset: '8px' }}>感想</h3>
+    <p style={{ textAlign: 'left' }}>後日</p>
+    <br></br>
+      </div></div>
     ) 
   },
   { 
