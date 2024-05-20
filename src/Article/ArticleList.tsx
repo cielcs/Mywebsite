@@ -32,12 +32,12 @@ const StyledCard = styled(Card)({
 
 const HorizontalCard = styled(Card)({
   display: 'flex',
-  width: '700px',
+  width: '730px',
   transition: 'transform 0.2s ease-in-out',
   boxShadow: '0 4px 8px rgba(0, 255, 255, 0.5)', // 白い影を追加
   backgroundColor: 'rgba(20, 27, 30, 0.3)', // カード自体の背景色を少し明るめに設定
   '&:hover': {
-    transform: 'scale(1.05)',
+    transform: 'scale(1.02)',
     boxShadow: '0 8px 16px rgba(0, 255, 255, 0.5)', // ホバー時に影を強くする
   },
 });
@@ -56,9 +56,9 @@ const articles: Article[] = [
   // { id: 4, title: 'Europe＃1', imageUrl: '/images/oru.jpg' ,description: 'xxxxxxxxxx'},
 ];
 const products: Products[] = [
-  { id: 1, title: 'Europe＃1', imageUrl: '/images/paris1.jpeg',description: '旅の背景、スケジュールとwuewubuwiibwubwubuwbか'},
-  { id: 2, title: 'Europe＃2', imageUrl: '/images/korea1.jpg',description: '韓国に経由して、いざフランス' },
-  { id: 3, title: 'Europe＃1', imageUrl: '/images/effe.jpg',description: 'xxxxxxxxxx' },
+  { id: 1, title: 'PHANTOMTALE', imageUrl: '/images/phantom2.png',description: '-高専4年性の時の友達と制作したVRゲーム-'},
+  { id: 2, title: 'Bertを用いたSNS上の文章取得', imageUrl: '/images/korea1.jpg',description: '-SNS上の投稿を判別するシステム-' },
+  { id: 3, title: 'Variational Autoencodeによる異常検知', imageUrl: '/images/effe.jpg',description: '-光沢を持つ製品の異常を確立的生成モデルを用いて検知-' },
   // { id: 4, title: 'Europe＃1', imageUrl: '/images/oru.jpg' ,description: 'xxxxxxxxxx'},
 ];
 
@@ -134,11 +134,7 @@ const ArticleList: React.FC = () => {
         </Grid>
         ))}
         </Grid>
-        {/* <ul style={{ padding: 0, textAlign: 'center', margin: '0 auto', maxWidth: '800px', lineHeight: '2.5' }}>
-          <div>
-            <VideoPlayer videoId={t('works.videoId')} headerText={t('works.headerText')} Description={t('works.description')}/>
-          </div>
-        </ul> */}
+        
         </Container>
         </ul>
         
@@ -161,10 +157,10 @@ const ArticleList: React.FC = () => {
                   alt={article.title}
                 />
                 <CardContent style={{ padding: '10px' }}>
-                  <Typography gutterBottom variant="h6" component="div" style={{ fontSize: '20px',fontFamily: "Kdam Thmor Pro" ,color:'white'}}>
+                  <Typography gutterBottom variant="h6" component="div" style={{ fontSize: '24px',fontFamily: "Kdam Thmor Pro" ,color:'white'}}>
                     {article.title}
                   </Typography>
-                  <Typography gutterBottom variant="h6" component="div" style={{ fontSize: '12px',fontFamily: "Kdam Thmor Pro" ,color:'white'}}>
+                  <Typography gutterBottom variant="h6" component="div" style={{ fontSize: '14px',fontFamily: "Kdam Thmor Pro" ,color:'white'}}>
                     {article.description}
                   </Typography>
                 </CardContent>

@@ -10,6 +10,7 @@ interface Product {
   contentLayout: JSX.Element;
 }
 
+
 const Container = styled('div')({
     backgroundColor: 'rgba(20, 27, 30, 0.2)', 
     padding: '10px',
@@ -21,31 +22,35 @@ const products: Product[] = [
   { 
     
     id: 1, 
-    title: 'ヨーロッパ周遊＃1', 
+    title: 'PHANTOMTALE', 
     contentLayout: (
+        <div>
+            <br></br>
+        <img src={'../../'+process.env.PUBLIC_URL+'/images/phantom2.png'} style={{ width: '700px', maxHeight: '350px', objectFit: 'cover' }} />
       <div style={{ maxWidth: '800px', margin: '0 auto' }}>
         <br></br><br></br>
-        <h3 style={{ textAlign: 'left' }}>旅の背景</h3>
-        <p style={{ textAlign: 'left' }}>旅がしたい。新しい世界観を得たい。そんな気持ちで海外旅行をすることにした。旅行先はアジア諸国、アメリカ、リゾート系そしてヨーロッパなど色々な選択肢が考えられたが、やはり街の景色や建物に異世界味を一番感じるヨーロッパの国々を回ることにした。（筆者は大のファンタジー好きである。ちなみに一番好きな異世界アニメは無職転生である。あれはもう「人生」って感じの作品だ。）</p>
+        <h3 style={{ textAlign: 'left',textDecoration: 'underline', textDecorationColor: 'rgba(0, 255, 255, 0.7)',textUnderlineOffset: '8px' }}>概要</h3>
+        <p style={{ textAlign: 'left' }}>高専生時代に仲の良い友達と6人で制作したVRアクションRPGゲームです。チームは大まかにメインキャラクター実装班、エネミー実装班、レベルデザイン、音響&Tips制作、チュートリアル作成に分かれて開発を行いましたが、常に勉強会を行い、情報と理解を共有しながら進めました。自分はレベルデザインの全てとゲーム内ギミックの実装、ダメージ処理や当たり判定の実装を主に行いました。VRゴーグル環境を持っていなくても(自宅でも)開発を進めていける役割だったので、ついついサービス残業をしてしまったのが懐かしいですw</p>
         <br></br>
+        <h3 style={{ textAlign: 'left',textDecoration: 'underline', textDecorationColor: 'rgba(0, 255, 255, 0.7)',textUnderlineOffset: '8px' }}>使用技術</h3>
+        <p style={{ textAlign: 'left' }}>Unreal Engine4,5<br></br>ブループリント</p>
+        <br></br>
+        <h3 style={{ textAlign: 'left',textDecoration: 'underline', textDecorationColor: 'rgba(0, 255, 255, 0.7)',textUnderlineOffset: '8px' }}>感想</h3>
+        <p style={{ textAlign: 'left' }}>初めてのチーム開発だったが、みんなが精一杯頑張ったおかげで最高のゲーム（当社比）を作れたと思う。開発はそれぞれ別の環境で行ったため、統合の段階で引数が違ったりなどのバグが多発して、大変だった。開発経験は少ないけど、ゲーム開発は本当にバグが大量に出ると思う。
+        <br></br>また、ブループリントはNode-REDみたいにビジュアルプログラミングで最初のうちは意外と扱いやすかったが、システムが複雑になればなるほど、スパゲッティ化が加速して魔境になるのでc++を使ったほうがいいと思った。しかし、コーディングに抵抗のあるメンバーもブループリントなら自ら勉強するようになったのは本当に素晴らしいと思った。</p>
+        <br></br>
+        <img src={'../../'+process.env.PUBLIC_URL+'/images/bluep.png'} style={{ width: '500px', maxHeight: '350px', objectFit: 'cover' }} />
+        <p style={{ textAlign: 'left' }}>To members:みんなありがとう。元気だといいね。因みに俺は課題が多すぎて元気じゃない。</p>
+
+
+
         <ul style={{ padding: 0, textAlign: 'center', margin: '0 auto', maxWidth: '800px', lineHeight: '2.5' }}>
           <div>
-            <VideoPlayer videoId='VsHFjEQZr2E' headerText="PHANTOM TALE" Description="このゲームは『PHANTOM TALE』と呼ばれ、私は高専4年生の時に友達と共に開発しました。"/>
+            <VideoPlayer videoId='VsHFjEQZr2E' headerText="" Description="ゲームのデモ映像です。よかったら見てね！"/>
           </div>
         </ul>
-        <h3 style={{ textAlign: 'left' }}>スケジュールとか</h3>
-        <p style={{ textAlign: 'left' }}>期間は2023/03/04 - 2023/03/24の20日間です。<br></br>
-        ルートはこんな感じです。名古屋→韓国→ポーランド（乗り換え）→フランス→ドイツ→スイス→イタリア<br></br>
-        ちなみに韓国に寄っているのは成田からエチオピアやドバイなどを経由する経路よりもトータルで見たら航空券が安かったからです。この当時はコロナウイルスの影響もあって、日本からの国際便が通常時と比べて少なかった。</p>
-        <img src={'../../'+process.env.PUBLIC_URL+'/images/image.png'} style={{ width: '450px' }} alt="root"></img>
-        <p style={{ textAlign: 'left' }}>青色:✈️ 赤色:🚌 黒色: 🚃<br></br>
-        基本都市間の移動には格安高速バスのFlix Busを利用しました。本当に安くて、お金があまりない学生には最高のバスでした。
-        しかし、ヴェネツィア-ローマ間は、精神的にも肉体的にも限界だったためバス代を諦めて、高速鉄道を利用しました。詳細は後ほど書こうと思います。<br></br><br></br>
-        次回、フランス到着まで
-        </p>
-        <br></br><br></br><br></br>
       </div>
-      
+      </div>
     ) 
   },
   { 
@@ -105,7 +110,7 @@ const ProductDetail: React.FC = () => {
     return (
       <div style={{ padding: '100px' }}>
         <Container>
-        <h2>{product.title}</h2>
+        <h2 style={{fontFamily: "Kdam Thmor Pro" ,textDecoration: 'underline', textDecorationColor: 'rgba(0, 255, 255, 0.7)',textUnderlineOffset: '8px'}}>{product.title}</h2>
         {product.contentLayout}
         </Container>
         {/* {product.id !== 1 && (
