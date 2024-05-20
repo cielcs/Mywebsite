@@ -14,21 +14,33 @@ function App() {
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
   };
+  const [topPosition, setTopPosition] = useState(0);
+  const scrollFactor = 0.5;
 
   useEffect(() => {
     const updateCursorPosition = (e: MouseEvent) => {
       setCursorPosition({ x: e.clientX - 11, y: e.clientY - 11 });
     };
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const newposition = scrollTop*scrollFactor;
+      setTopPosition(newposition);
+    };
 
     document.addEventListener("mousemove", updateCursorPosition);
+    window.addEventListener('scroll', handleScroll);
+    
 
     return () => {
       document.removeEventListener("mousemove", updateCursorPosition);
+      window.removeEventListener('scroll', handleScroll);
+    
     };
   }, []);
 
   return (
     <div className="App">
+      <div className="vertical-line" style={{ top: `${topPosition}px` }}></div>
       <div id="wrapper">
         <meta
           name="viewport"

@@ -1,5 +1,5 @@
 import Particles from 'react-tsparticles';
-
+// import '../App.css';
 function ParticleBackground() {
     return (
         <div style={{ position: 'relative',pointerEvents: 'none' }}>
@@ -114,6 +114,9 @@ function ParticleBackground() {
             // }
           },
           retina_detect: true
+        }}
+        style={{
+          filter: 'blur(3px)' // ぼかし効果を設定
         }}
       />
       </div>

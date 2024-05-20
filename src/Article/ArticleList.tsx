@@ -30,7 +30,7 @@ const StyledCard = styled(Card)({
 });
 
 const Container = styled('div')({
-  backgroundColor: 'rgba(20, 27, 30, 0.1)', 
+  backgroundColor: 'rgba(20, 27, 30, 0.2)', 
   // border: '2px solid rgba(0, 255, 255, 0.5)',
   padding: '30px',
   borderRadius: '0px', // 角を丸める
