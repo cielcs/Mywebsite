@@ -83,12 +83,40 @@ a {
   margin: 0 auto;
   padding: 0 20px;
 }
-
+/*上下の線*/
 .verticaltop_line {
   position: fixed;
-  top: 0;
+  top: 10px;
   left: 0;
   right: 0;
-  height: 5px; /* 横棒の高さ */
+  height: 3px; /* 横棒の高さ */
   background-color: rgba(0, 255, 255, 0.7); /* 線の色 */
+  z-index: 1000;
+}
+.verticalbottom_line {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  height: 3px; /* 横棒の高さ */
+  background-color: rgba(0, 255, 255, 0.7); /* 線の色 */
+  z-index: 1000;
+}
+.verticaltop_line2 {
+  position: fixed;
+  top: 5px;
+  left: 0;
+  right: 0;
+  height: 2px; /* 横棒の高さ */
+  background-color: rgba(255, 255, 255, 0.7); /* 線の色 */
+  z-index: 100;
+}
+.verticalbottom_line2 {
+  position: fixed;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  height: 2px; /* 横棒の高さ */
+  background-color: rgba(255, 255, 255, 0.7); /* 線の色 */
+  z-index: 100;
 }

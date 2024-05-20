@@ -22,7 +22,7 @@ const StyledCard = styled(Card)({
   width: '300px',
   transition: 'transform 0.2s ease-in-out',
   boxShadow: '0 4px 8px rgba(0, 255, 255, 0.5)', // 白い影を追加
-  backgroundColor: 'rgba(20, 27, 30, 0.1)', // カード自体の背景色を少し明るめに設定
+  backgroundColor: 'rgba(20, 27, 30, 0.3)', // カード自体の背景色を少し明るめに設定
   '&:hover': {
     transform: 'scale(1.05)',
     boxShadow: '0 8px 16px rgba(0, 255, 255, 0.5)', // ホバー時に影を強くする
@@ -95,23 +95,7 @@ const ArticleList: React.FC = () => {
         </ul>
         
       </div>
-      {/* <div className='Diary'>
-        <h2 style={{ marginTop: '10px',fontFamily: "Kdam Thmor Pro"}}>Diary</h2><br></br>
-        <ul style={{ padding: 0, textAlign: 'center', margin: '0 auto', maxWidth: '1000px', lineHeight: '2.5' }}>
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-          {articles.map((article) => (
-          <div key={article.id} style={{ margin: '10px', width: '210px', textAlign: 'center', border: '1px solid #ccc', borderRadius: '5px' }}>
-            <Link to={`/article/${article.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-              <div style={{ width: '210px', height: '210px', overflow: 'hidden', borderRadius: '5px 5px 0 0' }}>
-                <img src={process.env.PUBLIC_URL +  article.imageUrl} alt={article.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-              </div>
-              <h4 style={{ margin: '1px 0 0 0' }}>{article.title}</h4>
-            </Link>
-          </div>
-        ))}
-      </div>
-      </ul>
-    </div> */}
+      
     <div className="Diary">
     <ul style={{ listStyleType: 'none', padding: 0, textAlign: 'left', margin: '0 auto',maxWidth: '1050px', lineHeight: '2.5' }}>
     <Container>

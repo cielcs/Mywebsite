@@ -35,8 +35,11 @@ function App() {
     <div className="App">
       <VerticalLineUp />
       <VerticalLineDown />
-      {/* <div className="verticaltop-line"></div> */}
-      <div id="wrapper">
+      <div className="verticaltop_line"></div>
+      <div className="verticalbottom_line"></div>
+      <div className="verticaltop_line2"></div>
+      <div className="verticalbottom_line2"></div>
+      <div id="wrapper">  
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
