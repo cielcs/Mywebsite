@@ -8,6 +8,7 @@ import { VerticalLineUp, VerticalLineDown } from './components/Lines';
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import ArticleList from "./Article/ArticleList";
 import ArticleDetail from "./Article/ArticleDetail";
+import ProductDetail from "./Article/ProductDetail";
 
 
 function App() {
@@ -70,6 +71,7 @@ function App() {
           <Routes>
             <Route path="/" element={<ArticleList />} />
             <Route path="/article/:id" element={<ArticleDetail />} />
+            <Route path="/product/:id" element={<ProductDetail />} />
           </Routes>
         </Router>
       </div>
