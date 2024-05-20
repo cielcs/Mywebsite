@@ -174,7 +174,7 @@ const ArticleList: React.FC = () => {
       </ul>
     </div>
     <h4 style={{ marginTop: '10px',fontFamily: "Kdam Thmor Pro", textAlign: 'left' }}>Todo</h4>
-    <p style={{ marginTop: '10px',fontFamily: "Kdam Thmor Pro", textAlign: 'left' }}>works,diaryを書き足す</p>
+    <p style={{ marginTop: '10px',fontFamily: "Kdam Thmor Pro", textAlign: 'left' }}>works,diaryを書き足す。スマホ版をいつか修正する。もう眠い。</p>
     </div>
   );
 };

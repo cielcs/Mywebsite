@@ -30,7 +30,7 @@ const products: Product[] = [
       <div style={{ maxWidth: '800px', margin: '0 auto' }}>
         <br></br><br></br>
         <h3 style={{ textAlign: 'left',textDecoration: 'underline', textDecorationColor: 'rgba(0, 255, 255, 0.7)',textUnderlineOffset: '8px' }}>概要</h3>
-        <p style={{ textAlign: 'left' }}>高専生時代に仲の良い友達と6人で制作したVRアクションRPGゲームです。チームは大まかにメインキャラクター実装班、エネミー実装班、レベルデザイン、音響&Tips制作、チュートリアル作成に分かれて開発を行いましたが、常に勉強会を行い、情報と理解を共有しながら進めました。自分はレベルデザインの全てとゲーム内ギミックの実装、ダメージ処理や当たり判定の実装を主に行いました。VRゴーグル環境を持っていなくても(自宅でも)開発を進めていける役割だったので、ついついサービス残業をしてしまったのが懐かしいですw</p>
+        <p style={{ textAlign: 'left' }}>高専生時代に仲の良い友達と6人で制作したVRアクションRPGゲームです。チームは大まかにメインキャラクター実装班、エネミー実装班、レベルデザイン、音響&Tips制作、チュートリアル作成に分かれて開発を行いましたが、常に勉強会を行い、情報と理解を共有しながら進めました。自分はレベルデザイン全体とゲーム内ギミックの実装、ダメージ処理や当たり判定の実装を主に行いました。VRゴーグル環境を持っていなくても(自宅でも)開発を進めていける役割だったので、ついついサービス残業をしてしまったのが懐かしいですw</p>
         <br></br>
         <h3 style={{ textAlign: 'left',textDecoration: 'underline', textDecorationColor: 'rgba(0, 255, 255, 0.7)',textUnderlineOffset: '8px' }}>使用技術</h3>
         <p style={{ textAlign: 'left' }}>Unreal Engine4,5<br></br>ブループリント</p>
